@@ -1,1 +1,4 @@
 # MineriaDeDatosEsencial
+
+## Conceptos:
+
