@@ -11,6 +11,10 @@
 
 - Hay que asegurarse que los datos sean continuos o discretos. 
 
+- Una misma estructura de datos puede admitir varios modelos de minería que comparten el mismo dominio.
+
+- Algunos tipos de datos que existen en minería de datos son: text, long, boolean, double y date. 
+
 ### Columna discreta:
 - Contiene un número finito de valores, ya sea, porque la entrada númerica se ha limitado a un conjunto determinado de valores o es un texto. El texto siempre se trata como valor discreto. 
 
@@ -71,8 +75,50 @@ Las tablas anidadas también tiene clave:
 Esto es impoirtante para saber que utilizar para los algoritmos. 
 Cuando se crea un modelo de minería de datos, la ambigûedad en los datos puede generar errores o impedir que se utilicen algunos algoritmos. 
 
-##
+## Pasos para crear un modelo:
+- Crear la estructura de minería de datos.
+- Seleccionar el algoritmo más adecuado.
+- Elegir las columnas de estructuras que se van a usar en el modelo.
+- Definir las propiedades de las columnas, especificar.
+- Establecer parámetros.
+- Procesar la estructura y el modelo. 
 
+### Propiedades de los modelos de minería:
+- Nombre.
+- Descripción.
+- Fecha de último procesado.
+- Permiso.
+- Filtros.
+- Propiedades derivadas.
 
+Propiedades especiales: algoritmos y uso
+
+Una vez procesado el modelo de minería este almacena información sobre los datos y patrones. Incluyendo estadísticas, reglas y fórmulas de regresión.
+
+## Algoritmos de minería de datos:
+
+### Algoritmos de clasificación:
+Predicen una o más variables discretas basándose en los demás atributos del conjunto de datos.
+- Árbol de decisión.
+- Red neuronal.
+- Naive Bayes.
+
+### Algoritmos de regresión:
+Predicen una o más variables númericas continuas como pérdidas o ganancias. basándose en otros atributos del conjunto de datos.
+- Series temporales. 
+- Regrasión lineal.
+- Regresión logística. 
+
+### Algoritmos de segmentación o clústering:
+Que dividen los datos en grupos de elementos que tienen propiedades similares. 
+
+### Algoritmos de asociación:
+Que buscan correlaciones entre diferentes atributos de un conjunto de datos para la creación de reglas de asociación.
+
+### Algoritmos de análisis de secuencias:
+Que crean un resumen de las secuencias frecuentes o episodios en los datos como una serie de clicks en un sitio web.
+- Clústers de secuencias.
+
+Para seleccionar el tipo de algoritmo adecuado hay que enfocarse en el tipo de tarea a realizar. 
 
 
