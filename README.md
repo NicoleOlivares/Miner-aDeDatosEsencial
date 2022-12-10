@@ -99,26 +99,78 @@ Una vez procesado el modelo de minería este almacena información sobre los dat
 
 ### Algoritmos de clasificación:
 Predicen una o más variables discretas basándose en los demás atributos del conjunto de datos.
-- Árbol de decisión.
+
+- Árbol de decisión: columna de una sola clave, no están permitidas las claves compuestas. Una columna de predicción. Pueden ser de tipos diferentes. Columnas de entrada discreta o continuas. Mientras más columnas, más se demora. 
+
 - Red neuronal.
+Predecir un resultado, comercialización y promoción, procesos industriales y de producción, etc. Depende del número de estados de las columnas de entrada. Depende del número de columnas de predicción y del número de estados de las columnas de predicción.
+
 - Naive Bayes.
+técnicas bayesianas. Probabilidad de cada estado de cada columna de entrada.
+Con este algoritmo un departamento de comercialización puede predecir el resultado de un perfil de cliente concreto. 
+No están permitadas las claves compuestas. 
+Variables independientes y las de entrada también. 
 
 ### Algoritmos de regresión:
 Predicen una o más variables númericas continuas como pérdidas o ganancias. basándose en otros atributos del conjunto de datos.
 - Series temporales. 
+No necesita columnas adicionales de entrada.
+Predice tendencias basadas en los datos originales.
+Se pueden agregar datos. 
+
+Serie: Combinación de los datos de origen y los datos de la predicción.
+
+El modelo de serie temporal utiliza una mezcla de dos algoritmos. 
+
+Ocupa dos modelos, un modelo ocupa el algoritmo ARTXP y obtiene mejores resultados en las predicciones a corto plazo.
+Y el otro modelo utiliza el algoritmo ARIMA utilizado para la predicción a largo plazo.
+
+Combina los resultados de los dos modelos para obtener la mejor predicción sobre un número variable de intervalos de tiempo. 
+
+Una columna key time con valores continuos.
+una columna predecible
+una columna de clave de serie opcional
+
 - Regrasión lineal.
+Ayuda a calcular una relación lineal entre una variable independiente y otra dependiente. 
+Utiliza esa relación para la predicción. 
+
+La relación toma la forma de una ecuación para la línea que mejor represente una serie de datos.
+Es un método útil y conocido para modelar una respuesta a un cambio de algún factor subyacente. 
+
+Se calculan y se prueban automaticamente todas las posibles relaciones entre las variables.
+La regresión lineal podría simplificar el exceso de relaciones en escenarios en los que varios factores afectan al resultado.
+
+Datos númericos continuos. Esta denso, estudiar más. También se puede crear un árbol de desición para regresión.
+
 - Regresión logística. 
+Modelo resultados binarios.
+Método estadístico donde la curva de los datos se comprime mediante una transformación logística para minimizar el efecto de los valores extremos.
+
+Columna númerica o de texto, clave unica, una columna de entrada o más. Al menos necesita una columna de predicción. No se admiten tablas anidadas en la columna de predicción, pero si de entrada. 
+
+riesgo de enfermedad, demografico, que los clientes vuelvan o clasificar objetos con muchos atributos.
 
 ### Algoritmos de segmentación o clústering:
 Que dividen los datos en grupos de elementos que tienen propiedades similares. 
+- Tipo de segmentación.
+- Divide los datos en grupos o clústures de elementos que tienen propiedades similares. Que no se podrían deribar lógicamente a través de la observación casual.
+- Se utiliza para identificar agrupamientos naturales de casos basados en un conjunto de atributos.
+
+La agrupación en clústeers es una tarea de minería de datos no supervisada. Todos los atributos de entrada son tratados por igual.
+
+La mayoria de los algoritmo de clústering construyen a través de una serie de iteraciones y se detienen cuando el modelo converge, es decir, cuando los límites de estos segmentos están estabilizados.
+Entrena el modelo de forma estricta a partir de las relaciones que existen en los datos y de los clústeres que identifique el algoritmo. 
+
+Nota: investigar más. 
 
 ### Algoritmos de asociación:
 Que buscan correlaciones entre diferentes atributos de un conjunto de datos para la creación de reglas de asociación.
+- Algoritmo de asociación.
 
 ### Algoritmos de análisis de secuencias:
 Que crean un resumen de las secuencias frecuentes o episodios en los datos como una serie de clicks en un sitio web.
 - Clústers de secuencias.
 
 Para seleccionar el tipo de algoritmo adecuado hay que enfocarse en el tipo de tarea a realizar. 
-
 
