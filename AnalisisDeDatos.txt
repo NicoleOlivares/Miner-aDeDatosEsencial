@@ -1,4 +1,4 @@
-# ¿Qué es análisis de datos?
+#¿Qué es análisis de datos?
 
 es la inspección, limpieza, transformación y modelado de datos para la toma de decisiones empresariales.
 
