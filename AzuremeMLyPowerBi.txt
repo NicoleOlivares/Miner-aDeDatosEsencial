@@ -1,0 +1,134 @@
+Evaluar modelos de regresión con ML Studio
+
+Escenarios frecuentes
+- Regresión. 
+- Clasificación binaria.
+- Clasificación multiclase.
+
+Ejemplo de evaluación:
+
+Modelo de Regresión:
+Se trata de predecir el precio de un producto mediante algunas características como pueden ser sus 
+dimensiones, el material del que esta hecho, indices de fragilidad, ya sean continuas o discretas. 
+
+Estas características van a definir las variables de entrada al modelo. 
+
+Lo que se quiere predecir es el precio que es un valor númerico continuo. 
+
+Esto es un problema de regresión tipico. 
+
+Una vez creado, ejecutado y entrenado el modelo, se cuenta con los precios que resultaron de la predicción.
+Este modelo se puntúa o se mide y luego se evalúa.
+
+Métricas disponibles para un modelo de regresión:
+- Mean Absolute Error.
+- Root Mean Absolute Error.
+- Relative Absolute Error.
+- Relative Squared Error.
+- Coefficient of Determination.
+
+El termino error representa la diferencia entre el valor predicho y el valor verdadero.
+Las métricas de error miden el rendimiento de predicción de un modelo de regresión en cuanto 
+a la desviación media de sus predicciones a partir de los valores reales. 
+
+Los valores de error más bajos implican que el modelo es más preciso a la hora de realizar predicciones.
+
+Una métrica de error generada de cero significa que el modelo se ajusta a los datos perfectamente.
+
+El coeficiente de determinación, que también se conoce como R2, es también una forma estándar de medir
+cuánto se adapta el modelos a los datos.
+Se puede interpretar como la proporción de la variación que explica el modelo.
+Una mayor proporción es mejor en este caso, donde uno indica un ajuste perfecto. 
+
+____________________________
+Evaluación cruzada
+En caso de realizar la evaluación cruzada a este mismo escenario, hay que recordar que se utiliza un 
+modelo sin entrenar y que el conjunto se divide en 10 subconjuntos 9 de ellos para entrenar y uno para medir 
+los resultados. Después de ejecutar el experimento para ver los resultados de evaluación, lo que hacemos es
+que exploramos el módulo, validar modelos de forma cruzada. 
+Y esto nos proporcionará una vista detallada de las métricas de cada iteración, es decir, de cada subconjunto
+y los resultados promediados de cada una de las métricas.
+
+______________________________________
+Evaluar modelos de Clasificación binario con ML Studio
+
+Una vez completada todas las faces del experimento y hayamos evaluado el modelo, vamos a ver el informe
+de evaluación.
+
+Vemos la curva ROC 
+
+Veremos las cifras que muestra el informe.
+
+Cuando la herramienta ejecuta un algoritmo con dos posibles respuestas, decide automáticamente cuál de las 
+dos respuestas (llamada clase) en el conjunto dado, va a ser la clase positiva o negativa. O etiqueta positiva 
+o negativa. Puede llamarse a la respuesta clase o etiqueta. 
+
+Las instancias positivas o negativas que el clasificador predice correctamente se llaman VERDADEROS POSITIVOS
+y VERDADEROS NEGATIVOS (True Positive o True Negative). Lo mismo ocurre en el caso contrario, las instancias positivas y negativas que el 
+clasificador no predice correctamente se llaman FALSOS POSITIVOS Y FALSOS NEGATIVOS (False Positive o False Negative).
+
+La exactitud es la proporción de casos que se han clasificado correctamente.
+Suele ser la primera métrica que se comprueba alñ evaluar un clasificador.
+
+La Precision es la proporción de casos positivos que se han clasificado correctamente, mientras la recuperación o 
+Recall es la tasa de positivos verdaderos. 
+
+Existe una compensación entre estas dos medidas. En un conjunto relativamente equilibrado, el clasificador
+que prediga principalmente instancias positivas tendría una alta recuperación, pero una Precision más baja, 
+ya que, muchas de las instancias negativas se clasificarían incorrectamente, y de esta forma se produciría 
+un mayor número de falsos positivos.
+
+Esta métrica por su parte que se conoce como puntaje F1, es la media armónica entre la precisión y la recuperación.
+Es una buena forma de resumir la evaluación en un único número, pero siempre es una práctica recomendada comprobar
+la precisión, la recuperación y todas las métricas juntas para comprender mejor cómo se ha comportado el clasificador.
+
+Además, tenemos también información que nos devuelve el algoritmo a través de la curva ROC (gráfica que se llama curva característica del receptor).
+Muestra la tasa de falsos positivos y de verdaderos positivos. 
+
+Mientras más se acerque esta curva a la esquina superior izquierda, mejor será el rendimiento del 
+clasificador. Quiere decir que se maximiza la tasa de verdaderos positivos a la vez que se minimiza la de
+falsos positivos.
+
+Muestra además una línea diagonal que se corresponde con la estimación aleatoria.
+
+___________________________________________
+Implementación del experimento
+Publicar un servicio web desde Azure ML Studio
+
+1- Se conecto al conjunto de datos.
+2- Seleccionar las columnas que queremos utilizar. 
+3- Luego se ha dividido el conjunto de datos en dos. Una parte para entrenar el modelo y la otra para
+medir la eficiencia del modelo.
+4- Para entrenar el modelo necesitamos un algoritmo. 
+5- Una vez entrenado y medido el modelo, se ha realizado la evaluación de la eficiencia del modelo.
+
+Una vez esta todo esto ejecutado podemos crear un servicio web. SET UP WEB SERVICE.
+
+Ahí se ha creado un experimento predictivo y se ah creado bien. A partir de ahora, estos servicios web proporcionan
+una interfaz entre la aplicación y un modelo de predicción, creado precisamente con Microsoft Azure Machine Learning Studio.
+
+De esta forma, una aplicación externa puede comunicarse con el modelo en tiempo real. 
+Una llamada a un servicio web de "machine learning" devuelve el resultado de predicción a una aplicación externa.
+
+Para realizar una llamada a un servicio web, es necesario pasar una clave de API que se creó al implementar este servicio. 
+El servicio web se basa en REST, una conocida opción de arquitectura para proyectos de programación web.
+______________________________________________
+Aumento y disminución en el tiempo con Power BI y ML
+
+Se hace con un algoritmo
+Analizar ---> Explicación de la disminución 
+
+_______________________________________________
+Diferencias de distribución entre columnas con Power BI y ML
+
+Power BI ejecuta algoritmos de ML para tener esos resultados y encontrar anomalias en los datos. 
+Es muy intuitivo.
+
+DIFERENCIADORES CLAVES CON POWER BI
+
+Influenciadores clavez con eso hay que decirle al algoritmo que se va a analizar en esta caso
+la columana de comprador y decirle además cuáles son aquellas columnas que vamos a utilizar para hacer ese análisis.
+Por ejemplo nos puede interesar, la educación, la distancia a la que vive, si ya tiene autos o no, la región en la que vive, 
+la ocupación y los ingresos. 
+
+Esta bueno y entretenido. 

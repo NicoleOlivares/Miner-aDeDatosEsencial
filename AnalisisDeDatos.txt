@@ -1,7 +1,12 @@
-#¿Qué es análisis de datos?
+¿Qué es análisis de datos?
 
 es la inspección, limpieza, transformación y modelado de datos para la toma de decisiones empresariales.
 
 ¿Qué es análista de datos?
 Trabaja con cualquiera de esos procesos o con todos ellos, muestra los resultados del proceso y configura 
 datos para la toma de decisiones de un proyecto.
+
+archivos CSV.
+Un archivo CSV (valores separados por comas) es un archivo de texto que tiene un formato específico que 
+permite guardar los datos en un formato de tabla estructurada.
+
